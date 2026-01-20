@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .page{
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            overflow: hidden;
+        }
+        .video-bag{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .card{
+            position: absolute;
+            width: 100%;
+            max-width: 400px;
+            background: black;
+            border-radius: 14px;
+            padding: 28px;
+            backdrop-filter: blur(4px);
+            border: 1px solid white;
+            box-shadow: 0 8px 30px white;
+            color: white;
+            z-index: 3;
+        }
+        .overlay{
+            position: absolute;
+            inset: 0;
+            background: rgb(0,0,0,0,4);
+            backdrop-filter: blur(3px);
+            z-index: 1;
+        }
+        h1{
+            margin-bottom: 6px;
+            font-size: 1.8rem;
+        }
+        p .lead{
+            margin-bottom: 16px;
+            opacity: 9;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 9px;
+            border: 1px solid;
+            background: white;
+            color: black;
+            font-size: 1rem;
+        }
+        input::placeholder{
+            color: white;
+        }
+        .actions{
+            margin-bottom: 19px;
+        }
+        button{
+            width: 100%;
+            padding: 12px;
+            border-radius: 9px;
+            background: linear-gradient(90deg,black,);
+        }
+    </style>
+</head>
+    <div class="page">
+       <video class="video-bg" autoplay muted loop playsinline>
+        <source src="https://cdn.pixabay.com/video/2025/07/27/293788_tiny.mp4" type="video/mp4">
+       </video>
+       <div class="overlay"></div>
+       <section class="card">
+        <h1>sign up</h1>
+        <p class="lead">create your account</p>
+        <form action="#" method="post">
+                <div class="field">
+                    <label >username</label>
+                    <input type="text" placeholder="username" required>
+                </div>
+                <div class="field">
+                    <label >email</label>
+                    <input type="email" placeholder="example@.com" required>
+
+                </div>
+                <div class="field">
+                    <label >password</label><br>
+                    <input type="password" placeholder="*******" required>
+                </div>
+                <div class="actions">
+                    <button type="submit">create account</button>
+                </div>
+                <div class="actions">
+                    <p class="link-text">
+                        already have an account? <a href="login.html">login</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </div>
+    
+</body>
+</html>

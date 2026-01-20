@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about| 3D Card Website</title>
+<style>
+ *{
+   margin:0;padding:0;
+   box-sizing:border-box;
+   font-family:"Poppins",sans-serif;
+  }
+
+body{
+   background:#afa01b;
+    color:#222;
+  }
+
+/* navbar styling */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:linear-gradient(90deg,#000,#004aad);
+  color:rgb(255, 255, 255);
+  padding:15px 60px;
+  position:fixed;top:0;left:0;width:100%;
+  z-index:1000;
+  box-shadow:0 4px 15px rgba(141,13,13,0.3);
+}
+
+/* logo styling */
+.logo img{
+  height:160px;width:160px;
+  border-radius:50%;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+.logo img:hover{transform:scale(1.1);}
+
+/* nav links styling */
+.nav-links{
+    display:flex;
+    gap:25px;
+  }
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+  }
+
+.nav-links a:hover{
+  color:#00adb5;
+}
+
+
+/* about section styling */
+#about{
+    padding:120px 20px;
+    text-align:center;
+  }
+
+#about h2{
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#222831;
+  }
+    
+    /* card styling */
+.card-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:40px;
+  perspective:1000px;
+}
+.card{
+  background:#106975;
+  width:600px;
+  border-radius:20px;
+  overflow:hidden;
+  text-align:center;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(0,7,5,0.2);
+  transform: style 3d;
+}
+.card:hover{
+  transform:rotateY(15deg) rotateX(10deg) scale(1.05);
+  box-shadow:0 25px 40px rgba(0,0,0,0.3);
+}
+.card img{
+  width:600px;
+  height:500px;
+  object-fit:cover;
+  border-bottom:3px solid #00adb5;
+}
+
+.card h3{margin:15px 0;
+    font-size:1.5rem;
+    color:#ad0082;}
+
+.card p{font-size:1rem;
+padding:0 20px 25px;
+line-height:1.5;
+color:#333;}
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="signup.html">sign up</a>
+        </nav>
+    </header>
+<div id="about">
+    <h2>About Us</h2>
+    <div class="card-container">
+      <section class="card">
+        <img src="https://cdn.pixabay.com/photo/2025/10/12/07/32/measuring-cups-9889151_1280.jpg"alt="img 1">
+        <h3>Our Website</h3>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, itaque ab aperiam id veniam doloremque, deserunt temporibus optio, ipsum quos recusandae omnis incidunt. Repudiandae aliquam et, optio natus quidem vero.</P>
+      </section>
+
+      <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2025/10/08/17/05/nature-9881953_1280.jpg"alt="img2">
+        <h3>Our Vision</h3>
+       <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa asperiores, quas facilis impedit blanditiis tempora adipisci ducimus alias illo nam tempore odit. Quos aperiam debitis veniam porro maxime! Dolorum!</P>
+       </div>
+         <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2023/11/21/19/47/fall-8404115_1280.jpg"alt="img 4">
+        <h3>end page</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae autem quas, incidunt cupiditate possimus laborum quos earum unde eveniet modi at hic, ducimus dolor dicta distinctio natus, odio in.</P>
+         </div>
+    </div>
+</body>
+</html>
