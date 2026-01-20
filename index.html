@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home 3d-website</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:"Poppins",sans-serif;}
+
+body{background:#f7f7f7;color:#222;}
+
+/* navbar */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:linear-gradient(90deg,#000,#004aad);
+  color:white;
+  padding:15px 60px;
+  position:fixed;top:0;left:0;width:100%;
+  z-index:1000;
+  box-shadow:0 4px 15px rgba(139, 141, 13, 0.3);
+}
+
+/* logo styling */
+.logo img{
+  height:160px;
+  width:160px;
+  border-radius:50%;
+  cursor:pointer;
+  transition:transform 0.3s ease;
+}
+
+.logo img:hover{transform:scale(1.1);}
+
+/* nav links styling */
+.nav-links{display:flex;
+    gap:25px;  }
+    
+
+.nav-links a{
+  text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+  }
+
+.nav-links a:hover{
+  color:#00adb5;
+}
+
+/* hero section */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:url(https://cdn.pixabay.com/photo/2025/10/09/14/14/muztagh-9883659_1280.jpg) center/cover no-repeat;
+  color:#fff;
+  padding:0 20px;
+}
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+    color:#00adb5;
+    text-shadow:12px 2px 10px rgba(0,0,0,0.5);
+  }
+
+.hero p{font-size:1.2rem;
+    margin-bottom:30px;
+    max-width:600px;
+    line-height:1.6;
+    color:#e0f7fa;}
+
+.Button {
+    display:inline-block;
+    text-decoration:none;
+    background-color:#00adb5;
+    color:#222;
+    padding:12px 30px;
+    border-radius:10px;
+    font-size:1rem;
+    font-weight:700;
+    box-shadow:0 4px 15px rgba(70, 121, 28, 0.3);
+    transition:0.3s;
+}
+.Button:hover{
+    background-color:#007f06;
+    opacity:0.9;
+}
+
+</style>
+</head>
+<body>
+    <header>
+      
+        <nav class="navbar">
+            
+            <!-- LOGO SECTION -->
+            <div class="logo">
+                <img src="/imglogo.jpg"alt="img1" >
+            </div>
+
+            <!-- NAV LINKS -->
+            <div class="nav-links">
+                <a href="index.html">home</a>
+                <a href="about.html">about us</a>
+                <a href="services.html">services</a>
+                <a href="signup.html">sign up</a>
+        </div>
+        </nav>
+    </header>
+    <section class="hero">
+      <h1>welcome to my website</h1>
+        <p>Explore creative designs, modern layouts, and smooth website experiences.</p>
+        <button class="btn">EXPLORE NOW</button>
+    </section>
+    
+</body>
+</html>
